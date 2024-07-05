@@ -68,7 +68,8 @@ class ToDo:
                                 icon=ft.icons.DELETE,
                                 icon_size=20,
                                 on_click=self.delete_task,
-                                data=tsk[0]
+                                data=tsk[0],
+                                icon_color=ft.colors.RED
                             )
                         ]
                     )
