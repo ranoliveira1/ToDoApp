@@ -61,7 +61,8 @@ class ToDo:
                                 value=True if tsk[2]=="complete" else False,
                                 on_change=self.update_task,
                                 expand=True,
-                                data=tsk[0]
+                                data=tsk[0],
+                                label_style=ft.TextStyle(color=ft.colors.BLACK)
                             ),
                             ft.IconButton(
                                 icon=ft.icons.DELETE,
@@ -137,6 +138,7 @@ class ToDo:
                 ft.TextField(
                     hint_text="Type here a taks...",
                     expand=True,
+                    color=ft.colors.BLACK,
                     on_submit=new_task
                 ),
                 ft.FloatingActionButton(
