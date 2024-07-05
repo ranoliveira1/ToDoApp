@@ -160,5 +160,5 @@ class ToDo:
 
         self.page.add(input_area, tabs, self.tasks_conteiner())
 
-
-ft.app(target=ToDo, assets_dir='assets')
+if __name__=="__main__":
+    ft.app(target=ToDo, assets_dir='assets')
