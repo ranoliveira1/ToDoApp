@@ -18,7 +18,7 @@ class ToDo:
 
     # Function to connect to/create Database used in the project: function to be used to manipulate it
     def db_execute(self, query, params=[]):
-        with sqlite3.connect("to_do_app_database.db") as con:
+        with sqlite3.connect("assets/db/to_do_app_database.db") as con:
             cur = con.cursor()
             cur.execute(query, params)
             con.commit()
